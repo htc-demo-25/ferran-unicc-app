@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "ferran-unicc-app"
+  annotations:
+    "humanitec.com/orgId": "htc-demo-25"
+    "humanitec.com/appId": "ferran-unicc-app"
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
