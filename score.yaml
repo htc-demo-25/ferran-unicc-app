@@ -10,6 +10,9 @@ service:
       targetPort: 9898 # The port that the container will be listening on
 
 containers:
+  backend:
+    variables:
+      Hello: World 
   frontend:
     image: # Set by pipeline
     variables:
