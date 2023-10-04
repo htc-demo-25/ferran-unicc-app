@@ -11,12 +11,13 @@ service:
 
 containers:
   backend:
+    image: busybox
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo Hello $${TEST}!; sleep 5; done"]
     variables:
-      Hello: World 
+      TEST: Jhon
   frontend:
     image: # Set by pipeline
-    variables:
-      Hello: World
 
 resources:
   dns: # We need a DNS record to point to the service 
