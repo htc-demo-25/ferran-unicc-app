@@ -16,6 +16,7 @@ containers:
     args: ["-c", "while true; do echo Hello $${TEST}!; sleep 5; done"]
     variables:
       TEST: Jhon
+      DB_PASS: ${values.DB_PASS}
   frontend:
     image: # Set by pipeline
 
